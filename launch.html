@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--   <link rel='stylesheet' type='text/css' href='./src/css/example-smart-app.css'> -->
+    <title>gsp789 Example-SMART-App</title>
+  </head>
+  <body>
+    <script src='fhir-client.js'></script>
+    <script>
+      FHIR.oauth2.authorize({
+        'client_id': '6b05a2d6-a432-4598-90d5-e0db0a966a41',
+        'scope':  'patient/Patient.read patient/Observation.read launch online_access openid profile'
+      });
+    </script>
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </body>
+</html>
